@@ -1,0 +1,171 @@
+{
+  "Actor": 
+  {
+    "types": ["character", "npc"],
+    "character": {
+
+      "general": {
+        "name": "",
+        "race": "",
+        "gender": "",
+        "age": 0,
+        "socialstanding": "",
+        "reputation": "",
+        "profession": ""
+      },
+
+      "stats": {
+        "int": 0,
+        "ref": 0,
+        "dex": 0,
+        "body": 0,
+        "spd": 0,
+        "emp": 0,
+        "cra": 0,
+        "will": 0,
+        "luck": 0
+      },
+      "derivedstats": {
+        "stun": 0,
+        "run": 0,
+        "leap": 0,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "sta": {
+          "value": 0,
+          "max": 0
+        },
+        "enc": 0,
+        "rec": 0,
+        "punch": 0,
+        "kick": 0
+      },
+
+
+      "skills": {
+        "intelligence": {
+          "awareness": 0,
+          "business": 0,
+          "deduction": 0,
+          "education": 0,
+          "commonsp": 0,
+          "eldersp": 0,
+          "dwarven": 0,
+          "monster": 0,
+          "socialetq": 0,
+          "streetwise": 0,
+          "tactics": 0,
+          "teaching": 0,
+          "wilderness": 0
+        },
+        "reflex": {
+          "brawling": 0,
+          "dodge": 0,
+          "melee": 0,
+          "riding": 0,
+          "sailing": 0,
+          "smallblades": 0,
+          "staffspear": 0,
+          "swordsmanship": 0
+        },
+        "dexterity": {
+          "archery": 0,
+          "athletics": 0,
+          "crossbow": 0,
+          "sleight": 0,
+          "stealth": 0
+        },
+        "body": {
+          "physique": 0,
+          "endurance": 0
+        },
+        "empathy": {
+          "charisma": 0,
+          "deceit": 0,
+          "finearts": 0,
+          "gambling": 0,
+          "grooming": 0,
+          "perception": 0,
+          "leadership": 0,
+          "persuasion": 0,
+          "seduction": 0
+        },
+        "craft": {
+          "alchemy": 0,
+          "crafting": 0,
+          "disguise": 0,
+          "firstaid": 0,
+          "forgery": 0,
+          "picklock": 0,
+          "trapcraft": 0
+        },
+        "will": {
+          "courage": 0,
+          "hexweave": 0,
+          "intimidation": 0,
+          "spellcast": 0,
+          "resistmagic": 0,
+          "resistcoerc": 0,
+          "ritcraft": 0
+        }
+      }
+
+
+      
+    }
+  },
+
+
+
+  "Item": 
+  {
+    "types": ["weapon", "armor", "component", "valuable", "magic"],
+
+
+    "weapon": {
+      "description": "",
+      "quantity": 1,
+      "weight": 0,
+      "attributes": {
+        "type": "",
+        "accuracy": 0,
+        "avail": "",
+        "damage": "",
+        "reliable": 0,
+        "hands": 0,
+        "range": "",
+        "effect": "",
+        "conceal": "",
+        "enhancements": 0,
+        "weight": 0,
+        "cost": 0
+      }
+    },
+
+
+    "armor": {
+      "description": "",
+      "quantity": 1,
+      "weight": 0,
+      "attributes": {
+        "stopping": 0,
+        "reliable": 0,
+        "avail": "",
+        "enhancements": 0,
+        "effect": "",
+        "encumb": 0,
+        "weight": 0,
+        "cost": 0
+      }
+    }
+
+
+
+
+  }
+
+
+
+}

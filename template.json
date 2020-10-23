@@ -11,104 +11,335 @@
         "age": 0,
         "socialstanding": "",
         "reputation": "",
-        "profession": ""
+        "profession": "",
+        "crowns": 0
       },
 
-      "stats": {
-        "int": 0,
-        "ref": 0,
-        "dex": 0,
-        "body": 0,
-        "spd": 0,
-        "emp": 0,
-        "cra": 0,
-        "will": 0,
-        "luck": 0
-      },
-      "derivedstats": {
-        "stun": 0,
-        "run": 0,
-        "leap": 0,
+      "core": {
         "hp": {
           "value": 0,
-          "max": 0
+          "max": 0,
+          "abbr": "WITCHER.AbbrHP",
+          "label": "WITCHER.DerHP"
         },
         "sta": {
           "value": 0,
-          "max": 0
+          "max": 0,
+          "abbr": "WITCHER.AbbrSta",
+          "label": "WITCHER.DerSta"
+        }
+      },
+
+      "misc": {
+        "spd": {
+          "value": 0,
+          "label": "",
+          "abbr": ""
         },
-        "enc": 0,
-        "rec": 0,
-        "punch": 0,
-        "kick": 0
+        "luck":{
+          "value": 0,
+          "label": "",
+          "abbr": ""
+        }
+      },
+
+      "stats": {
+          "int": {
+            "value": 0,
+            "label": "WITCHER.StInt",
+            "abbr": "WITCHER.AbbrInt"
+          },
+          "ref": {
+            "value": 0,
+            "label": "WITCHER.StRef",
+            "abbr": "WITCHER.AbbrRef"
+          },
+          "dex": {
+            "value": 0,
+            "label": "WITCHER.StDex",
+            "abbr": "WITCHER.AbbrDex"
+          },
+          "body": {
+            "value": 0,
+            "label": "WITCHER.StBody",
+            "abbr": "WITCHER.AbbrBody"
+          },
+          "emp": {
+            "value": 0,
+            "label": "WITCHER.StEmp",
+            "abbr": "WITCHER.AbbrEmp"
+          },
+          "cra": {
+            "value": 0,
+            "label": "WITCHER.StCra",
+            "abbr": "WITCHER.AbbrCra"
+          },
+          "will": {
+            "value": 0,
+            "label": "WITCHER.StWill",
+            "abbr": "WITCHER.AbbrWill"
+          }
+      },
+
+      "derivedstats": {
+        "stun": {
+          "value": 0,
+          "label": "WITCHER.DerStun",
+          "abbr": "WITCHER.AbbrStun"
+        },
+        "run": {
+          "value": 0,
+          "label": "WITCHER.DerRun",
+          "abbr": "WITCHER.AbbrRun"
+        },
+        "leap": {
+          "value": 0,
+          "label": "WITCHER.DerLeap",
+          "abbr": "WITCHER.AbbrLeap"
+        },
+        "enc": {
+          "value": 0,
+          "label": "WITCHER.DerEnc",
+          "abbr": "WITCHER.AbbrEnc"
+        },
+        "rec": {
+          "value": 0,
+          "label": "WITCHER.DerRec",
+          "abbr": "WITCHER.AbbrRec"
+        },
+        "punch": {
+          "value": 0,
+          "abbr": "WITCHER.AbbrPunch"
+        },
+        "kick": {
+          "value": 0,
+          "abbr": "WITCHER.AbbrKick"
+        }
       },
 
 
       "skills": {
-        "intelligence": {
-          "awareness": 0,
-          "business": 0,
-          "deduction": 0,
-          "education": 0,
-          "commonsp": 0,
-          "eldersp": 0,
-          "dwarven": 0,
-          "monster": 0,
-          "socialetq": 0,
-          "streetwise": 0,
-          "tactics": 0,
-          "teaching": 0,
-          "wilderness": 0
+        "int": {
+          "awareness": {
+            "value": 0,
+            "label": "WITCHER.SkIntAwareness"
+          },
+          "business": {
+            "value": 0,
+            "label": "WITCHER.SkIntBusiness"
+          },
+          "deduction": {
+            "value": 0,
+            "label": "WITCHER.SkIntDeduction"
+          },
+          "education": {
+            "value": 0,
+            "label": "WITCHER.SkIntEducation"
+          },
+          "commonsp": {
+            "value": 0,
+            "label": "WITCHER.SkIntCommon"
+          },
+          "eldersp": {
+            "value": 0,
+            "label": "WITCHER.SkIntElder"
+          },
+          "dwarven": {
+            "value": 0,
+            "label": "WITCHER.SkIntDwarven"
+          },
+          "monster": {
+            "value": 0,
+            "label": "WITCHER.SkIntMonster"
+          },
+          "socialetq": {
+            "value": 0,
+            "label": "WITCHER.SkIntSocialEt"
+          },
+          "streetwise": {
+            "value": 0,
+            "label": "WITCHER.SkIntStreet"
+          },
+          "tactics": {
+            "value": 0,
+            "label": "WITCHER.SkIntTactics"
+          },
+          "teaching": {
+            "value": 0,
+            "label": "WITCHER.SkIntTeaching"
+          },
+          "wilderness": {
+            "value": 0,
+            "label": "WITCHER.SkIntWilderness"
+          }
         },
-        "reflex": {
-          "brawling": 0,
-          "dodge": 0,
-          "melee": 0,
-          "riding": 0,
-          "sailing": 0,
-          "smallblades": 0,
-          "staffspear": 0,
-          "swordsmanship": 0
+        "ref": {
+          "brawling": {
+            "value": 0,
+            "label": "WITCHER.SkRefBrawling"
+          },
+          "dodge": {
+            "value": 0,
+            "label": "WITCHER.SkRefDodge"
+          },
+          "melee": {
+            "value": 0,
+            "label": "WITCHER.SkRefMelee"
+          },
+          "riding": {
+            "value": 0,
+            "label": "WITCHER.SkRefRiding"
+          },
+          "sailing": {
+            "value": 0,
+            "label": "WITCHER.SkRefSailing"
+          },
+          "smallblades": {
+            "value": 0,
+            "label": "WITCHER.SkRefSmall"
+          },
+          "staffspear": {
+            "value": 0,
+            "label": "WITCHER.SkRefStaff"
+          },
+          "swordsmanship": {
+            "value": 0,
+            "label": "WITCHER.SkRefSwordmanship"
+          }
         },
-        "dexterity": {
-          "archery": 0,
-          "athletics": 0,
-          "crossbow": 0,
-          "sleight": 0,
-          "stealth": 0
+        "dex": {
+          "archery": {
+            "value": 0,
+            "label": "WITCHER.SkDexArchery"
+          },
+          "athletics": {
+            "value": 0,
+            "label": "WITCHER.SkDexAthletics"
+          },
+          "crossbow": {
+            "value": 0,
+            "label": "WITCHER.SkDexCrossbow"
+          },
+          "sleight": {
+            "value": 0,
+            "label": "WITCHER.SkDexSleight"
+          },
+          "stealth": {
+            "value": 0,
+            "label": "WITCHER.SkDexStealth"
+          }
         },
         "body": {
-          "physique": 0,
-          "endurance": 0
+          "physique": {
+            "value": 0,
+            "label": "WITCHER.SkBodyPhys"
+          },
+          "endurance": {
+            "value": 0,
+            "label": "WITCHER.SkBodyEnd"
+          }
         },
-        "empathy": {
-          "charisma": 0,
-          "deceit": 0,
-          "finearts": 0,
-          "gambling": 0,
-          "grooming": 0,
-          "perception": 0,
-          "leadership": 0,
-          "persuasion": 0,
-          "seduction": 0
+        "emp": {
+          "charisma": {
+            "value": 0,
+            "label": "WITCHER.SkEmpCharisma"
+          },
+          "deceit": {
+            "value": 0,
+            "label": "WITCHER.SkEmpDeceit"
+          },
+          "finearts": {
+            "value": 0,
+            "label": "WITCHER.SkEmpArts"
+          },
+          "gambling": {
+            "value": 0,
+            "label": "WITCHER.SkEmpGambling"
+          },
+          "grooming": {
+            "value": 0,
+            "label": "WITCHER.SkEmpGrooming"
+          },
+          "perception": {
+            "value": 0,
+            "label": "WITCHER.SkEmpHumanPerc"
+          },
+          "leadership": {
+            "value": 0,
+            "label": "WITCHER.SkEmpLeadership"
+          },
+          "persuasion": {
+            "value": 0,
+            "label": "WITCHER.SkEmpPersuasion"
+          },
+          "performance": {
+            "value": 0,
+            "label": "WITCHER.SkEmpPerformance"
+          },
+          "seduction": {
+            "value": 0,
+            "label": "WITCHER.SkEmpSeduction"
+          }
         },
-        "craft": {
-          "alchemy": 0,
-          "crafting": 0,
-          "disguise": 0,
-          "firstaid": 0,
-          "forgery": 0,
-          "picklock": 0,
-          "trapcraft": 0
+        "cra": {
+          "alchemy": {
+            "value": 0,
+            "label": "WITCHER.SkCraAlchemy"
+          },
+          "crafting": {
+            "value": 0,
+            "label": "WITCHER.SkCraCrafting"
+          },
+          "disguise": {
+            "value": 0,
+            "label": "WITCHER.SkCraDisguise"
+          },
+          "firstaid": {
+            "value": 0,
+            "label": "WITCHER.SkCraAid"
+          },
+          "forgery": {
+            "value": 0,
+            "label": "WITCHER.SkCraForge"
+          },
+          "picklock": {
+            "value": 0,
+            "label": "WITCHER.SkCraPick"
+          },
+          "trapcraft": {
+            "value": 0,
+            "label": "WITCHER.SkCraTrapCraft"
+          }
         },
         "will": {
-          "courage": 0,
-          "hexweave": 0,
-          "intimidation": 0,
-          "spellcast": 0,
-          "resistmagic": 0,
-          "resistcoerc": 0,
-          "ritcraft": 0
+          "courage": {
+            "value": 0,
+            "label": "WITCHER.SkWillCourage"
+          },
+          "hexweave": {
+            "value": 0,
+            "label": "WITCHER.SkWillHex"
+          },
+          "intimidation": {
+            "value": 0,
+            "label": "WITCHER.SkWillIntim"
+          },
+          "spellcast": {
+            "value": 0,
+            "label": "WITCHER.SkWillSpellcast"
+          },
+          "resistmagic": {
+            "value": 0,
+            "label": "WITCHER.SkWillResistMag"
+          },
+          "resistcoerc": {
+            "value": 0,
+            "label": "WITCHER.SkWillResistCoer"
+          },
+          "ritcraft": {
+            "value": 0,
+            "label": "WITCHER.SkWillRitCraft"
+          }
         }
       }
 

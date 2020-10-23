@@ -3,6 +3,16 @@
   src: url('../assets/MORPHEUS.TTF');
 }
 
+@font-face {
+  font-family: 'Timeless';
+  src: url('../assets/Timeless.ttf');
+}
+
+@font-face {
+  font-family: 'Timeless Bold';
+  src: url('../assets/Timeless-Bold.ttf');
+}
+
 .wtrpg {
   /* Sheet Tabs */
   /* Items List */
@@ -44,6 +54,7 @@
   width: 100%;
   height: 100%;
   margin: 0;
+  font-family: "Timeless Bold";
 }
 .wtrpg .resource {
   width: 50%;
@@ -262,12 +273,14 @@
 
 .wtrpg.sheet.actor ul.attributes li.attribute .attribute-value.multiple input {
   width: 35px;
+  font-family: "Timeless Bold";
 }
 
 .wtrpg.sheet.actor ul.attributes li.attribute .attribute-value input.header.detail {
   width: 100px;
   background-color: rgba(0, 0, 0, 0.1);
   margin: 0 auto;
+  font-family: "Timeless Bold"
 }
 
 .wtrpg.sheet.actor ul.attributes li.attribute .attribute-value{
@@ -297,6 +310,67 @@
   font-family: "Morpheus";
 }
 
+/* Stats tab content */
+
+.wtrpg.sheet.actor .tab.body.stats {
+  display: flex;
+  flex-direction: row;
+}
+
+.wtrpg.sheet.actor table.table.stats,
+.wtrpg.sheet.actor table.table.derived {
+  width: 110px;
+  border: 5px double #041723;;
+}
+
+.wtrpg.sheet.actor table tr th input.stats {
+  width: 25px;
+}
+
+.wtrpg.sheet.actor table.table.stats tr:nth-child(odd),
+.wtrpg.sheet.actor table.table.derived tr:nth-child(odd) {
+  background-color: #F3F6F8;
+}
+
+.wtrpg.sheet.actor table.table.stats tr:nth-child(even),
+.wtrpg.sheet.actor table.table.derived tr:nth-child(even)
+{
+  background-color: #DBE6EB;
+}
+
+.wtrpg.sheet.actor div.stats.statscol {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+}
+
+.wtrpg.sheet.actor div.stats.centerpane .skills.col {
+  display: flex;
+  flex-direction: column;
+  padding-right: 5px;
+}
+
+.wtrpg.sheet.actor div.stats.centerpane {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  padding-left: 5px;
+}
+
+.wtrpg.sheet.actor div.stats.centerpane table.table.skills {
+  width: 150px;
+  border: 5px double #041723;
+}
+
+.wtrpg.sheet.actor table tr th input.skills {
+  width: 25px;
+}
+
+.wtrpg.sheet.actor table tr.headerrow th.table.header{
+  font-family: "Timeless Bold";
+}
+
 /* Navigation tabs */
 
 .sheet nav.sheet-tabs {
@@ -312,8 +386,8 @@
 /* Sheet min widths */
 
 .wtrpg.sheet.actor {
-  min-width: 600px;
-  min-height: 420px;
+  min-width: 750px;
+  min-height: 758px;
 }
 .wtrpg.sheet.item {
   min-width: 460px;

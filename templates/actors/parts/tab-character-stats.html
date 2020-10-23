@@ -1,1 +1,184 @@
-<p>Stats</p>
+<div class="tab body stats">
+   <!--Div for stats and derived stats column BEGIN-->
+    <div class="stats statscol">
+        <!--Table for stats BEGIN-->
+        <table class="table stats">
+            <tr class="table headerrow stats">
+                <th class="table header stats" colspan="2">
+                    {{localize "WITCHER.Stats"}}
+                </th>
+            </tr>
+            {{#each data.stats as |stats st|}}
+            <tr class="tablerow stats">
+                <th class="{{st}} stats">
+                    {{localize stats.abbr}}
+                </th>
+                <th class="input stats">
+                    <input class="stats {{st}}" id="{{st}}" type="number" value="{{stats.value}}" placeholder="0"/>
+                </th>
+            </tr>
+            {{/each}}
+        </table>
+        <!--Table for stats END-->
+
+        <!--Table for derived stats BEGIN-->
+        <table class="table derived">
+            <tr class="table headerrow stats">
+                <th class="table header stats" colspan="2">
+                    {{localize "WITCHER.DerivedStats"}}
+                </th>
+            </tr>
+            {{#each data.derivedstats as |stats st|}}
+            <tr class="tablerow stats">
+                <th class="{{st}} stats">
+                    {{localize stats.abbr}}
+                </th>
+                <th class="input stats">
+                    <input class="stats {{st}}" id="{{st}}" type="number" value="{{stats.value}}" placeholder="0"/>
+                </th>
+            </tr>
+            {{/each}}
+        </table>
+        <!--Table for derived stats END-->
+    </div>
+    <!--Div for stats and derived stats column END-->
+
+    <!--Div for stats and derived stats column END-->
+    <div class="stats centerpane">
+
+            <div class="skills col">
+                <table class="table skills int">
+                    <tr class="table headerrow skills int">
+                        <th class="table header skills int" colspan="2">
+                            {{localize data.stats.int.label}}
+                        </th>
+                    </tr>
+                    {{#each data.skills.int as |skills sk|}}
+                    <tr class="tablerow skills int">
+                        <th class="skills">
+                            {{localize skills.label}}
+                        </th>
+                        <th class="input skills int">
+                            <input class="skills int" id="{{sk}}" type="number" value="{{skills.value}}" placeholder="0"/>
+                        </th>
+                    </tr>
+                    {{/each}}
+                </table>
+            </div>
+
+            <div class="skills col">
+                <table class="table skills ref">
+                    <tr class="table headerrow skills ref">
+                        <th class="table header skills ref" colspan="2">
+                            {{localize data.stats.ref.label}}
+                        </th>
+                    </tr>
+                    {{#each data.skills.ref as |skills sk|}}
+                    <tr class="tablerow skills ref">
+                        <th class="skills">
+                            {{localize skills.label}}
+                        </th>
+                        <th class="input skills ref">
+                            <input class="skills ref" id="{{sk}}" type="number" value="{{skills.value}}" placeholder="0"/>
+                        </th>
+                    </tr>
+                    {{/each}}
+                </table>
+
+                <table class="table skills dex">
+                    <tr class="table headerrow skills dex">
+                        <th class="table header skills dex" colspan="2">
+                            {{localize data.stats.dex.label}}
+                        </th>
+                    </tr>
+                    {{#each data.skills.dex as |skills sk|}}
+                    <tr class="tablerow skills dex">
+                        <th class="skills">
+                            {{localize skills.label}}
+                        </th>
+                        <th class="input skills dex">
+                            <input class="skills dex" id="{{sk}}" type="number" value="{{skills.value}}" placeholder="0"/>
+                        </th>
+                    </tr>
+                    {{/each}}
+                </table>
+            </div>
+
+            <div class="skills col">
+                <table class="table skills body">
+                    <tr class="table headerrow skills body">
+                        <th class="table header skills body" colspan="2">
+                            {{localize data.stats.body.label}}
+                        </th>
+                    </tr>
+                    {{#each data.skills.body as |skills sk|}}
+                    <tr class="tablerow skills body">
+                        <th class="skills">
+                            {{localize skills.label}}
+                        </th>
+                        <th class="input skills body">
+                            <input class="skills body" id="{{sk}}" type="number" value="{{skills.value}}" placeholder="0"/>
+                        </th>
+                    </tr>
+                    {{/each}}
+                </table>
+
+                <table class="table skills emp">
+                    <tr class="table headerrow skills emp">
+                        <th class="table header skills emp" colspan="2">
+                            {{localize data.stats.emp.label}}
+                        </th>
+                    </tr>
+                    {{#each data.skills.emp as |skills sk|}}
+                    <tr class="tablerow skills emp">
+                        <th class="skills">
+                            {{localize skills.label}}
+                        </th>
+                        <th class="input skills emp">
+                            <input class="skills emp" id="{{sk}}" type="number" value="{{skills.value}}" placeholder="0"/>
+                        </th>
+                    </tr>
+                    {{/each}}
+                </table>
+            </div>
+
+            <div class="skills col">
+                <table class="table skills cra">
+                    <tr class="table headerrow skills cra">
+                        <th class="table header skills cra" colspan="2">
+                            {{localize data.stats.cra.label}}
+                        </th>
+                    </tr>
+                    {{#each data.skills.cra as |skills sk|}}
+                    <tr class="tablerow skills cra">
+                        <th class="skills">
+                            {{localize skills.label}}
+                        </th>
+                        <th class="input skills cra">
+                            <input class="skills cra" id="{{sk}}" type="number" value="{{skills.value}}" placeholder="0"/>
+                        </th>
+                    </tr>
+                    {{/each}}
+                </table>
+
+                <table class="table skills will">
+                    <tr class="table headerrow skills will">
+                        <th class="table header skills will" colspan="2">
+                            {{localize data.stats.will.label}}
+                        </th>
+                    </tr>
+                    {{#each data.skills.will as |skills sk|}}
+                    <tr class="tablerow skills will">
+                        <th class="skills">
+                            {{localize skills.label}}
+                        </th>
+                        <th class="input skills will">
+                            <input class="skills will" id="{{sk}}" type="number" value="{{skills.value}}" placeholder="0"/>
+                        </th>
+                    </tr>
+                    {{/each}}
+                </table>
+            </div>
+    </div>
+    <!--Div for stats and derived stats column END-->
+</div>

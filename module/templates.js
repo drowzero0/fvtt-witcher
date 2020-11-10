@@ -12,7 +12,8 @@ export const preloadHandlebarsTemplates = async function() {
   "systems/wtrpg/templates/actors/parts/tab-character-abilities.html",
   "systems/wtrpg/templates/actors/parts/tab-character-magic.html",
   "systems/wtrpg/templates/actors/parts/tab-character-inventory.html",
-  "systems/wtrpg/templates/actors/parts/tab-character-background.html"
+  "systems/wtrpg/templates/actors/parts/tab-character-background.html",
+  "systems/wtrpg/templates/actors/parts/tab-character-combat.html"
   ];
 
   // Load the template parts

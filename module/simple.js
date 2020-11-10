@@ -19,14 +19,13 @@ import { createWorldbuildingMacro, rollAttrMacro } from "./macro.js";
  * Init hook.
  */
 Hooks.once("init", async function() {
-  console.log(`Initializing Simple Worldbuilding System`);
 
   /**
    * Set an initiative formula for the system. This will be updated later.
    * @type {String}
    */
   CONFIG.Combat.initiative = {
-    formula: "1d20",
+    formula: "1d10",
     decimals: 2
   };
 
@@ -61,7 +60,7 @@ Hooks.once("init", async function() {
     hint: "SETTINGS.SimpleInitFormulaL",
     scope: "world",
     type: String,
-    default: "1d20",
+    default: "1d10",
     config: true,
     onChange: formula => _simpleUpdateInit(formula, true)
   });
@@ -86,7 +85,7 @@ Hooks.once("init", async function() {
     }
     // Otherwise, fall back to a d20.
     catch (error) {
-      CONFIG.Combat.initiative.formula = "1d20";
+      CONFIG.Combat.initiative.formula = "1d10";
       if (notify) {
         ui.notifications.error(game.i18n.localize("WITCHER.NotifyInitFormulaInvalid") + ` ${formula}`);
       }

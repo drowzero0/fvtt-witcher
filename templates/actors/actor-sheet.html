@@ -9,6 +9,9 @@
       <a class="item" data-tab="stats">
         {{localize "WITCHER.TabStats"}}
       </a>
+      <a class="item" data-tab="combat">
+        {{localize "WITCHER.TabCombat"}}
+      </a>
       <a class="item" data-tab="abilities">
         {{localize "WITCHER.TabAbilities"}}
       </a>
@@ -29,6 +32,10 @@
       {{! Stats Tab }}
       <div class="tab" data-group="primary" data-tab="stats">
         {{> "systems/wtrpg/templates/actors/parts/tab-character-stats.html"}}
+      </div>
+      {{! Combat Tab }}
+      <div class="tab" data-group="primary" data-tab="combat">
+        {{> "systems/wtrpg/templates/actors/parts/tab-character-combat.html"}}
       </div>
       {{! Abilities Tab }}
       <div class="tab" data-group="primary" data-tab="abilities">

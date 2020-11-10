@@ -11,10 +11,10 @@
             {{#each data.stats as |stats st|}}
             <tr class="tablerow stats">
                 <th class="{{st}} stats">
-                    {{localize stats.abbr}}
+                    <span class="rollable stat {{st}}" id="{{st}}-rollable">{{localize stats.abbr}}</span>
                 </th>
                 <th class="input stats">
-                    <input class="stats {{st}}" id="{{st}}" type="number" value="{{stats.value}}" placeholder="0"/>
+                    <input class="stats {{st}}" name="data.stats.{{st}}.value" type="number" value="{{stats.value}}" placeholder="0"/>
                 </th>
             </tr>
             {{/each}}
@@ -22,19 +22,19 @@
         <!--Table for stats END-->
 
         <!--Table for derived stats BEGIN-->
-        <table class="table derived">
-            <tr class="table headerrow stats">
-                <th class="table header stats" colspan="2">
+        <table class="table stats derived">
+            <tr class="table headerrow stats derived">
+                <th class="table header stats derived" colspan="2">
                     {{localize "WITCHER.DerivedStats"}}
                 </th>
             </tr>
             {{#each data.derivedstats as |stats st|}}
-            <tr class="tablerow stats">
-                <th class="{{st}} stats">
-                    {{localize stats.abbr}}
+            <tr class="tablerow stats derived">
+                <th class="{{st}} stats derived">
+                    <span class="rollable stat {{st}}" id="{{st}}-rollable">{{localize stats.abbr}}</span>
                 </th>
-                <th class="input stats">
-                    <input class="stats {{st}}" id="{{st}}" type="number" value="{{stats.value}}" placeholder="0"/>
+                <th class="input derived">
+                    <input class="stats derived {{st}}" name="data.derivedstats.{{st}}.value" type="text" value="{{stats.value}}" data-dtype={{stats.dtype}} placeholder="0"/>
                 </th>
             </tr>
             {{/each}}
@@ -56,10 +56,10 @@
                     {{#each data.skills.int as |skills sk|}}
                     <tr class="tablerow skills int">
                         <th class="skills">
-                            {{localize skills.label}}
+                            <a class="rollable skill {{sk}}" id="{{sk}}-rollable">{{localize skills.label}}</a>
                         </th>
                         <th class="input skills int">
-                            <input class="skills int" id="{{sk}}" type="number" value="{{skills.value}}" placeholder="0"/>
+                            <input class="skills int" name="data.skills.int.{{sk}}.value" type="number" value="{{skills.value}}" placeholder="0"/>
                         </th>
                     </tr>
                     {{/each}}
@@ -76,10 +76,10 @@
                     {{#each data.skills.ref as |skills sk|}}
                     <tr class="tablerow skills ref">
                         <th class="skills">
-                            {{localize skills.label}}
+                            <a class="rollable skill {{sk}}" id="{{sk}}-rollable">{{localize skills.label}}</a>
                         </th>
                         <th class="input skills ref">
-                            <input class="skills ref" id="{{sk}}" type="number" value="{{skills.value}}" placeholder="0"/>
+                            <input class="skills ref" name="data.skills.ref.{{sk}}.value" type="number" value="{{skills.value}}" placeholder="0"/>
                         </th>
                     </tr>
                     {{/each}}
@@ -94,10 +94,10 @@
                     {{#each data.skills.dex as |skills sk|}}
                     <tr class="tablerow skills dex">
                         <th class="skills">
-                            {{localize skills.label}}
+                            <a class="rollable skill {{sk}}" id="{{sk}}-rollable">{{localize skills.label}}</a>
                         </th>
                         <th class="input skills dex">
-                            <input class="skills dex" id="{{sk}}" type="number" value="{{skills.value}}" placeholder="0"/>
+                            <input class="skills dex" name="data.skills.dex.{{sk}}.value" type="number" value="{{skills.value}}" placeholder="0"/>
                         </th>
                     </tr>
                     {{/each}}
@@ -114,10 +114,10 @@
                     {{#each data.skills.body as |skills sk|}}
                     <tr class="tablerow skills body">
                         <th class="skills">
-                            {{localize skills.label}}
+                            <a class="rollable skill {{sk}}" id="{{sk}}-rollable">{{localize skills.label}}</a>
                         </th>
                         <th class="input skills body">
-                            <input class="skills body" id="{{sk}}" type="number" value="{{skills.value}}" placeholder="0"/>
+                            <input class="skills body" name="data.skills.body.{{sk}}.value" type="number" value="{{skills.value}}" placeholder="0"/>
                         </th>
                     </tr>
                     {{/each}}
@@ -132,10 +132,10 @@
                     {{#each data.skills.emp as |skills sk|}}
                     <tr class="tablerow skills emp">
                         <th class="skills">
-                            {{localize skills.label}}
+                            <a class="rollable skill {{sk}}" id="{{sk}}-rollable">{{localize skills.label}}</a>
                         </th>
                         <th class="input skills emp">
-                            <input class="skills emp" id="{{sk}}" type="number" value="{{skills.value}}" placeholder="0"/>
+                            <input class="skills emp" name="data.skills.emp.{{sk}}.value" type="number" value="{{skills.value}}" placeholder="0"/>
                         </th>
                     </tr>
                     {{/each}}
@@ -152,10 +152,10 @@
                     {{#each data.skills.cra as |skills sk|}}
                     <tr class="tablerow skills cra">
                         <th class="skills">
-                            {{localize skills.label}}
+                            <a class="rollable skill {{sk}}" id="{{sk}}-rollable">{{localize skills.label}}</a>
                         </th>
                         <th class="input skills cra">
-                            <input class="skills cra" id="{{sk}}" type="number" value="{{skills.value}}" placeholder="0"/>
+                            <input class="skills cra" name="data.skills.cra.{{sk}}.value" type="number" value="{{skills.value}}" placeholder="0"/>
                         </th>
                     </tr>
                     {{/each}}
@@ -170,10 +170,10 @@
                     {{#each data.skills.will as |skills sk|}}
                     <tr class="tablerow skills will">
                         <th class="skills">
-                            {{localize skills.label}}
+                            <a class="rollable skill {{sk}}" id="{{sk}}-rollable">{{localize skills.label}}</a>
                         </th>
                         <th class="input skills will">
-                            <input class="skills will" id="{{sk}}" type="number" value="{{skills.value}}" placeholder="0"/>
+                            <input class="skills will" name="data.skills.will.{{sk}}.value" type="number" value="{{skills.value}}" placeholder="0"/>
                         </th>
                     </tr>
                     {{/each}}

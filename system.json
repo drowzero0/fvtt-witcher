@@ -28,7 +28,7 @@
   "primaryTokenAttribute": "hp",
   "secondaryTokenAttribute": "sta",
   "url": "https://github.com/sparkcity/fvtt-witcher",
-  "manifest": "https://raw.githubusercontent.com/drowzero0/fvtt-witcher/main/system.json",
+  "manifest": "https://github.com/drowzero0/fvtt-witcher/main/system.json",
   "download": "https://github.com/drowzero0/fvtt-witcher/archive/refs/heads/main.zip",
   "license": "LICENSE.txt"
 }

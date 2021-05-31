@@ -27,8 +27,8 @@
   "gridUnits": "m",
   "primaryTokenAttribute": "hp",
   "secondaryTokenAttribute": "sta",
-  "url": "https://github.com/sparkcity/fvtt-witcher",
-  "manifest": "https://github.com/drowzero0/fvtt-witcher/main/system.json",
-  "download": "https://github.com/drowzero0/fvtt-witcher/archive/refs/heads/main.zip",
+  "url": "https://github.com/drowzero0/fvtt-witcher",
+  "manifest": "https://raw.githubusercontent.com/drowzero0/fvtt-witcher/main/system.json",
+  "download": "https://github.com/drowzero0/fvtt-witcher/archive/main.zip",
   "license": "LICENSE.txt"
 }
